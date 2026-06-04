@@ -34,11 +34,12 @@ DEPARTMENTS = {
 }
 
 SHEET_ID = "1I9dSX7mpdRly2I-SpadicLxsjcU4V_IyWX_1I6v3gUM"
+SHEET_GID = "56484956"  # طلبات الاغلاق
 
 def load_sheets_data():
     """Load data from Google Sheets CSV export"""
     try:
-        csv_url = f"https://docs.google.com/spreadsheets/d/{SHEET_ID}/export?format=csv&gid=0"
+        csv_url = f"https://docs.google.com/spreadsheets/d/{SHEET_ID}/export?format=csv&gid={SHEET_GID}"
         response = requests.get(csv_url, timeout=10)
         response.encoding = 'utf-8'
         
