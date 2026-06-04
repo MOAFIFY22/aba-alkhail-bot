@@ -34,7 +34,7 @@ DEPARTMENTS = {
 }
 
 SHEET_ID = "1I9dSX7mpdRly2I-SpadicLxsjcU4V_IyWX_1I6v3gUM"
-SHEET_GID = "56484956"  # طلبات الاغلاق
+SHEET_GID = "0"  # الرخص الأساسية
 
 def load_sheets_data():
     """Load data from Google Sheets CSV export"""
